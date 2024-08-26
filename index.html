@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justice</title>
+
+  <!-- Google Font Cdn-->
+  <!-- EB garamond font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+    rel="stylesheet">
+
+  <!-- Poppins font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Fontawesome Cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Tailwind Cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bg-btn': '#B68C5A',
+            'dark-1': '#707070',
+            'dark-2': '#E7E7E7',
+            'titlec': '#FFFFFF'
+          },
+          fontFamily: {
+            ebgaramond: ['"EB Garamond"', 'serif'],
+            poppins: ['"Poppins"', 'sans-serif']
+          },
+          backgroundImage: {
+            'bannerbg': 'linear-gradient(180deg, rgb(17, 17, 17), rgba(17, 17, 17, 0) 100%), url("/images/banner.png")'
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body class="font-poppins">
+  <!-- Header section starts here -->
+  <header class="container mx-auto">
+    <nav class="my-10">
+      <div class="navbar bg-base-100 flex items-center justify-between">
+        <div class="">
+          <img src="images/logo2.png" alt="">
+        </div>
+        <div class="font-poppins text-dark-1 text-sm md:flex hidden ">
+          <ul class="flex gap-x-10 ">
+            <li><a href="#">Home</a>
+              <i class="fa-solid fa-greater-than"></i>
+            </li>
+            <li><a href="#">Services
+                <i class="fa-solid fa-greater-than"></i>
+              </a></li>
+            <li><a href="#">Cases
+                <i class="fa-solid fa-greater-than"></i>
+              </a></li>
+            <li><a href="#">Blog
+                <i class="fa-solid fa-greater-than"></i>
+              </a></li>
+            <li><a href="#">
+                Contact Us
+                <i class="fa-solid fa-greater-than"></i></a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="bg-bg-btn p-5 rounded-lg text-white  font-semibold font-ebgaramond">Free Consultation</a>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="bg-bannerbg bg-no-repeat bg-center bg-cover w-full  p-32 flex flex-col justify-center items-center rounded-sm space-y-7">
+      <h2 class="text-titlec font-ebgaramond font-extrabold text-5xl text-center">
+        We Provide Effective <br> Legal Solutions
+      </h2>
+      <p class="text-dark-2 w-2/4 text-center text-sm leading-6">There are many variations of passages of Lorem
+        Ipsum available,
+        but the
+        majority have
+        suffered alteration in
+        some form,
+        by injected humour.</p>
+      <div class="flex space-x-5">
+        <input class=" p-4 outline-none  rounded-md text-dark-2 text-sm " type="text"
+          placeholder="Search your services">
+        <button class="bg-bg-btn px-7 py-3 rounded-md text-titlec font-medium">Search</button>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <!-- Practice Area section -->
+    <section class="mt-24">
+      <div>
+        <div class="flex flex-col justify-center items-center">
+          <h2 class="text-5xl font-extrabold font-ebgaramond">The Legal Practice Area</h2>
+          <p class="font-dark-2 text-sm">There are many variations of passages of Lorem Ipsum available, but the
+            majority have suffered alteration
+            in some form,
+            by injected humour.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
